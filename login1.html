@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Dot & Key</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #form-details {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    
+    #form-details form {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #form-details form h2 {
+      margin-bottom: 20px;
+    }
+    
+    #form-details form input,
+    #form-details form button {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #e1e1e1;
+      outline: none;
+    }
+    
+    #form-details form button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    
+    #form-details form button:hover {
+      background-color: #333;
+    }
+    
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .remember input {
+      width: auto;
+      margin-right: 10px;
+    }
+    
+    .account-options {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .account-options a {
+      color: #088178;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  
+
+  
+
+  <section id="form-details">
+    <form action="">
+      <h2>Login to Your Account</h2>
+      <input type="text" placeholder="Email Address">
+      <input type="password" placeholder="Password">
+      
+      <div class="remember">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+      
+      <button type="submit">LOGIN</button>
+      
+      <div class="account-options">
+        <a href="#">Forgot Password?</a>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+      </div>
+    </form>
+  </section>
+
+  <footer class="section-p1">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

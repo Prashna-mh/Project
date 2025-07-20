@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Dot & Key</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #cart {
+      overflow-x: auto;
+      background-color: rgb(225, 231, 231);
+      color: rgb(12, 0, 9);
+    }
+    
+    #cart table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      white-space: nowrap;
+    }
+    
+    #cart table img {
+      width: 70px;
+    
+    }
+    
+    #cart table td:nth-child(1) {
+      width: 100px;
+      text-align: center;
+    }
+    
+    #cart table td:nth-child(2) {
+      width: 150px;
+      text-align: center;
+    }
+    
+    #cart table td:nth-child(3) {
+      width: 250px;
+      text-align: center;
+    }
+    
+    #cart table td:nth-child(4),
+    #cart table td:nth-child(5),
+    #cart table td:nth-child(6) {
+      width: 150px;
+      text-align: center;
+    }
+    
+    #cart table td:nth-child(5) input {
+      width: 50px;
+      padding: 5px;
+    }
+    
+    #cart table thead {
+      border: 1px solid #e2e9e1;
+      border-left: none;
+      border-right: none;
+    }
+    
+    #cart table thead td {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 18px 0;
+    }
+    
+    #cart table tbody tr td {
+      padding-top: 15px;
+    }
+    
+    #cart table tbody td {
+      font-size: 13px;
+    }
+    
+    #cart-add {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    #coupon {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    
+    #coupon h3,
+    #subtotal h3 {
+      padding-bottom: 15px;
+    }
+    
+    #coupon input {
+      padding: 10px 20px;
+      outline: none;
+      width: 60%;
+      margin-right: 10px;
+      border: 1px solid #e2e9e1;
+    }
+    
+    #coupon button,
+    #subtotal button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #subtotal {
+      width: 50%;
+      margin-bottom: 30px;
+      border: 1px solid #fcfffc;
+      padding: 30px;
+      background-color: #e1e6e0;
+    }
+    
+    #subtotal table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+      
+    }
+    
+    #subtotal table td {
+      width: 50%;
+      border: 1px solid #051803;
+      padding: 10px;
+      font-size: 13px;
+      
+    }
+    
+    @media (max-width: 799px) {
+      #cart-add {
+        flex-direction: column;
+      }
+      
+      #coupon {
+        width: 100%;
+      }
+      
+      #subtotal {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+  
+  <section id="cart" class="section-p1">
+    <table>
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="https://www.dotandkey.com/cdn/shop/files/1-Br-SS.jpg?v=1740473453&width=700" alt=""></td>
+          <td>Barrier Repair Hydrating Sunscreen</td>
+          <td>Rs.595</td>
+          <td><input type="number" value="1"></td>
+          <td>Rs.595</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="1c-Vit-C-Moisturizer_adcbccb6-945c-4c1a-ac7f-d8a40e3bf5ec.jpg" alt=""></td>
+          <td>Vitamin C+E Moisturizer</td>
+          <td>Rs.850</td>
+          <td><input type="number" value="1"></td>
+          <td>Rs.850</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button>Apply</button>
+      </div>
+    </div>
+    
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td>Rs.1445</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>Rs.1445</strong></td>
+        </tr>
+      </table>
+      <button>Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

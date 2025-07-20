@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Dot & Key</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #prodetails {
+      display: flex;
+      margin-top: 20px;
+    }
+    
+    #prodetails .single-pro-image {
+      width: 40%;
+      margin-right: 50px;
+    }
+    
+    #prodetails .single-pro-details {
+      width: 50%;
+      padding-top: 30px;
+    }
+    
+    #prodetails .single-pro-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    #prodetails .single-pro-details h4 {
+      padding: 20px 0;
+    }
+    
+    #prodetails .single-pro-details h2 {
+      font-size: 26px;
+    }
+    
+    #prodetails .single-pro-details select {
+      display: block;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+    
+    #prodetails .single-pro-details input {
+      width: 50px;
+      height: 47px;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    
+    #prodetails .single-pro-details button {
+      background-color: #000;
+      color: #fff;
+    }
+    
+    #prodetails .single-pro-details span {
+      line-height: 25px;
+    }
+
+    
+    @media (max-width: 799px) {
+      #prodetails {
+        flex-direction: column;
+      }
+      
+      #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+      }
+      
+      #prodetails .single-pro-details {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="https://www.dotandkey.com/cdn/shop/files/1_7399b118-b3e1-465a-930f-6d4e1a093e22.jpg?v=1741177103&width=360" width="100%" id="MainImg" alt="">
+    </div>
+    
+    <div class="single-pro-details">
+      <h2> Strawberry Dew Tinted Sunscreen SPF 50+ PA++++</h2>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+        
+      </div>
+      <h4>Rs.649</h4>
+      <select>
+        <option>Select Size</option>
+        <option>Porcelain Light - 01</option>
+        <option>Warm Ivory Light Medium - 02</option>
+        <option>Sand Medium - 03</option>
+        <option>Caramel Deep - 07</option>
+        
+      </select>
+      <input type="number" value="1">
+      <button>Add To Cart</button>
+      <h4>Product Details</h4>
+      <span>
+        This tinted sunscreen provides SPF 50+ protection while giving your skin a natural, even-toned finish. Infused with strawberry extract, it leaves your skin with a healthy glow.
+      </span>
+      
+      <div class="benefits">
+        <h4>Key Benefits:</h4>
+        <ul>
+          <li>SPF 50+ PA++++ protection</li>
+          <li>Lightweight tinted coverage</li>
+          <li>Natural, radiant finish</li>
+          <li>Delicate strawberry scent</li>
+        </ul>
+      </div>
+      
+      <div class="ingredients">
+        <h4>Key Ingredients:</h4>
+        <p>Strawberry Extract, Titanium Dioxide, Zinc Oxide</p>
+      </div>
+</div>
+  </section>
+
+  <footer class="section-p1">
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
